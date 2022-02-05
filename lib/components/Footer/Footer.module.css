@@ -1,0 +1,3 @@
+.root {
+  @apply flex h-12 text-white justify-center flex-col items-center my-4;
+}

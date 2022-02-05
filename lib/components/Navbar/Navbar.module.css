@@ -1,0 +1,8 @@
+.root {
+  @apply flex justify-between bg-slate-900 h-12 items-center text-white sticky top-0 bg-opacity-80 bg-clip-padding border-slate-800 border-2 rounded-lg p-4;
+  backdrop-filter: blur(20px);
+}
+
+.navbarLinks {
+  @apply flex justify-evenly gap-4;
+}
