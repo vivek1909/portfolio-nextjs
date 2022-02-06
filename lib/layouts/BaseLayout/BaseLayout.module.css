@@ -1,3 +1,7 @@
 .root {
-  @apply w-2/3 mx-auto;
+  @apply w-11/12 mx-auto;
+  /* tablet */
+  @apply sm:w-2/3;
+  /* laptop */
+  @apply md:w-1/2;
 }

@@ -1,0 +1,15 @@
+.root {
+  @apply flex-1 text-white text-justify;
+}
+
+.heading {
+  @apply text-2xl text-slate-400 font-bold mb-4;
+}
+
+.skillsList {
+  @apply flex flex-wrap border-2 border-white px-4;
+}
+
+.skillsList p {
+  @apply w-1/2 my-2;
+}
