@@ -1,3 +1,7 @@
 .root {
-  @apply w-2/3 mx-auto;
+  @apply w-11/12 mx-auto flex flex-col min-h-screen;
+  /* tablet */
+  @apply md:w-2/3;
+  /* laptop */
+  @apply lg:w-2/5;
 }
