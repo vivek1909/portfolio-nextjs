@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 import classes from "./Navbar.module.css";
 
@@ -5,13 +7,35 @@ export const Navbar: FC = () => {
   return (
     <div className={classes.root}>
       <div>
-        <h1>Vivek Mittal</h1>
+        <Link href={"/"}>
+          <a>
+            <div className={classes.logoWrapper}>
+              <Image
+                src={"/logo.svg"}
+                alt={"Vivek Mittal"}
+                height={30}
+                width={30}
+              />
+            </div>
+          </a>
+        </Link>
       </div>
       <div className={classes.navbarLinks}>
-        <p>About</p>
-        <p>Contact</p>
-        <p>Blogs</p>
-        <p>Projects</p>
+        <Link href={"/about"}>
+          <a>
+            <p>About</p>
+          </a>
+        </Link>
+        <Link href={"/posts"}>
+          <a>
+            <p>Blogs</p>
+          </a>
+        </Link>
+        <Link href={"/projects"}>
+          <a>
+            <p>Projects</p>
+          </a>
+        </Link>
       </div>
     </div>
   );

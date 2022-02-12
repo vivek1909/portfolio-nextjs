@@ -7,7 +7,7 @@ export const BaseLayout: FC = ({ children }) => {
   return (
     <div className={classes.root}>
       <Navbar />
-      <div className={"flex-1"}>{children}</div>
+      <div className={classes.mainContent}>{children}</div>
       <Footer />
     </div>
   );
