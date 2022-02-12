@@ -1,9 +1,15 @@
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+import { MenuItems } from "../../../types/menu";
 import classes from "./Navbar.module.css";
 
-export const Navbar: FC = () => {
+interface Props {
+  activeMenu?: MenuItems;
+}
+
+export const Navbar: FC<Props> = ({ activeMenu }) => {
   return (
     <div className={classes.root}>
       <div>
@@ -23,16 +29,32 @@ export const Navbar: FC = () => {
       <div className={classes.navbarLinks}>
         <Link href={"/about"}>
           <a>
-            <p>About</p>
+            <p
+              className={clsx({
+                [classes.isActive]: activeMenu === MenuItems.ABOUT,
+              })}
+            >
+              About
+            </p>
           </a>
         </Link>
         <Link href={"/posts"}>
           <a>
-            <p>Blogs</p>
+            <p
+              className={clsx({
+                [classes.isActive]: activeMenu === MenuItems.BLOGS,
+              })}
+            >
+              Blogs
+            </p>
           </a>
         </Link>
         <Link href={"/projects"}>
-          <a>
+          <a
+            className={clsx({
+              [classes.isActive]: activeMenu === MenuItems.PROJECTS,
+            })}
+          >
             <p>Projects</p>
           </a>
         </Link>

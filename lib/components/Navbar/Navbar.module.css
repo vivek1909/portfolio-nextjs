@@ -14,3 +14,11 @@
 .navbarLinks {
   @apply flex gap-4 justify-evenly;
 }
+
+.navbarLinks a:hover {
+  @apply text-blue-400 transition-all duration-200;
+}
+
+.isActive {
+  @apply text-blue-400;
+}
