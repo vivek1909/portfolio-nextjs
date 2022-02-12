@@ -45,7 +45,7 @@ export const ContactForm: FC = () => {
         disabled={isLoading}
         type={"submit"}
       >
-        Submit
+        Send Message
       </button>
     </form>
   );

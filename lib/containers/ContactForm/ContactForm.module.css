@@ -12,5 +12,5 @@
 
 .submitBtn:focus,
 .submitBtn:hover {
-  @apply bg-slate-800;
+  @apply transition-all duration-300 bg-slate-800;
 }
