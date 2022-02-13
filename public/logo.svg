@@ -4,16 +4,16 @@
 <circle cx="148" cy="148" r="144" stroke="url(#paint2_angular_48_5)" stroke-width="8"/>
 <defs>
 <radialGradient id="paint0_angular_48_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(140.398 146.4) rotate(90) scale(160 152.059)">
-<stop offset="0.324005" stop-color="#1BB8CC"/>
-<stop offset="0.771372" stop-color="#2DA1C2"/>
+<stop offset="0.324005" stop-color="#1B77CC"/>
+<stop offset="0.771372" stop-color="#2D7BC2"/>
 </radialGradient>
 <radialGradient id="paint1_angular_48_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(140.398 146.4) rotate(90) scale(160 152.059)">
-<stop offset="0.324005" stop-color="#1BB8CC"/>
-<stop offset="0.771372" stop-color="#2DA1C2"/>
+<stop offset="0.324005" stop-color="#1B77CC"/>
+<stop offset="0.771372" stop-color="#2D7BC2"/>
 </radialGradient>
 <radialGradient id="paint2_angular_48_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(148 148) rotate(90) scale(140)">
-<stop offset="0.418101" stop-color="#008899" stop-opacity="0.8"/>
-<stop offset="0.885371" stop-color="#089ECA" stop-opacity="0.5"/>
+<stop offset="0.418101" stop-color="#003D99" stop-opacity="0.8"/>
+<stop offset="0.885371" stop-color="#0884CA" stop-opacity="0.5"/>
 </radialGradient>
 </defs>
 </svg>

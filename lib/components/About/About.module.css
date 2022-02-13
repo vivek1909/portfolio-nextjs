@@ -3,7 +3,7 @@
 }
 
 .heading {
-  @apply mb-4 text-2xl font-bold text-slate-400;
+  @apply mb-4 text-2xl font-bold text-blue-300;
 }
 
 .skillsList {
@@ -23,7 +23,7 @@
 }
 
 .link:hover {
-  @apply transition-all duration-300 text-slate-400;
+  @apply text-blue-300 transition-all duration-300;
 }
 
 .orText {
