@@ -1,0 +1,16 @@
+.form {
+  @apply flex flex-col items-center w-full;
+}
+
+.submitBtn {
+  @apply w-full py-2 text-lg rounded-md bg-slate-700;
+}
+
+.submitBtn:disabled {
+  @apply bg-opacity-50 cursor-not-allowed;
+}
+
+.submitBtn:focus,
+.submitBtn:hover {
+  @apply transition-all duration-300 bg-slate-800;
+}

@@ -1,3 +1,11 @@
 .root {
-  @apply w-2/3 mx-auto;
+  @apply flex flex-col min-h-screen;
+}
+
+.mainContent {
+  @apply flex-1 w-5/6 mx-auto my-8;
+  /* tablet */
+  @apply md:w-2/3;
+  /* laptop */
+  @apply lg:w-2/5;
 }
