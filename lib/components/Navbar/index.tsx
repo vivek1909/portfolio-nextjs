@@ -50,12 +50,14 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
           </a>
         </Link>
         <Link href={"/projects"}>
-          <a
-            className={clsx({
-              [classes.isActive]: activeMenu === MenuItems.PROJECTS,
-            })}
-          >
-            <p>Projects</p>
+          <a>
+            <p
+              className={clsx({
+                [classes.isActive]: activeMenu === MenuItems.PROJECTS,
+              })}
+            >
+              Projects
+            </p>
           </a>
         </Link>
       </div>
