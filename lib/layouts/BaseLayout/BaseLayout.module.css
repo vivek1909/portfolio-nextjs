@@ -1,5 +1,6 @@
 .root {
   @apply flex flex-col min-h-screen;
+  font-family: "Montserrat", monospace;
 }
 
 .mainContent {
