@@ -1,0 +1,17 @@
+.root {
+  @apply flex flex-col items-center justify-center w-screen h-screen gap-4 p-8 text-center;
+}
+
+.goHomeBtn {
+  @apply z-10 px-8 py-3 font-semibold text-black bg-blue-400 rounded-xl;
+}
+
+.goHomeBtn:hover {
+  @apply transition-all duration-300 bg-blue-300;
+}
+
+.root h2 {
+  @apply text-3xl font-semibold text-blue-300;
+  /* tablet */
+  @apply sm:text-4xl;
+}
