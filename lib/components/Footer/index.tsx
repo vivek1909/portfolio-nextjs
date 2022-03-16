@@ -5,21 +5,27 @@ import {
 } from "../../../constants/SocialLinks";
 import classes from "./Footer.module.css";
 
-export const Footer: FC = () => {
+interface Props {
+  isHomePage?: boolean;
+}
+
+export const Footer: FC<Props> = ({ isHomePage = false }) => {
   return (
     <div className={classes.root}>
-      <div className={classes.socialLinks}>
-        {SOCIAL_LINKS.map((socialLink) => (
-          <a
-            href={socialLink.link}
-            key={socialLink.link}
-            target={"_blank"}
-            rel={"noreferrer"}
-          >
-            {<socialLink.component />}
-          </a>
-        ))}
-      </div>
+      {!isHomePage && (
+        <div className={classes.socialLinks}>
+          {SOCIAL_LINKS.map((socialLink) => (
+            <a
+              href={socialLink.link}
+              key={socialLink.link}
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              {<socialLink.component />}
+            </a>
+          ))}
+        </div>
+      )}
       <p>©{new Date().getFullYear()} All Rights Reserved.</p>
       <p className={classes.builtByText}>
         Built with&nbsp;

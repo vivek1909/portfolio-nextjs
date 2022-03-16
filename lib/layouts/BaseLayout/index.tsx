@@ -7,9 +7,14 @@ import classes from "./BaseLayout.module.css";
 
 interface Props {
   activeMenu?: MenuItems;
+  isHomePage?: boolean;
 }
 
-export const BaseLayout: FC<Props> = ({ children, activeMenu }) => {
+export const BaseLayout: FC<Props> = ({
+  children,
+  activeMenu,
+  isHomePage = false,
+}) => {
   return (
     <div className={classes.root}>
       <Head>
@@ -52,7 +57,7 @@ export const BaseLayout: FC<Props> = ({ children, activeMenu }) => {
       </Head>
       <Navbar activeMenu={activeMenu} />
       <div className={classes.mainContent}>{children}</div>
-      <Footer />
+      <Footer isHomePage={isHomePage} />
     </div>
   );
 };

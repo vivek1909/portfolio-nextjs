@@ -27,17 +27,6 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
         </Link>
       </div>
       <div className={classes.navbarLinks}>
-        <Link href={"/about"}>
-          <a>
-            <p
-              className={clsx({
-                [classes.isActive]: activeMenu === MenuItems.ABOUT,
-              })}
-            >
-              About
-            </p>
-          </a>
-        </Link>
         <Link href={"/posts"}>
           <a>
             <p

@@ -1,0 +1,65 @@
+.root {
+  @apply flex items-center justify-between text-3xl font-bold leading-normal;
+}
+
+.professionText {
+  @apply p-1 mt-2 text-xl font-semibold text-blue-400;
+}
+
+.greetingMultiLingual::before {
+  content: "Hello";
+  animation: greetingMsgAnimation infinite 10s;
+}
+
+@keyframes greetingMsgAnimation {
+  0% {
+    content: "Hello";
+  }
+  40% {
+    content: "Namaste";
+  }
+  60% {
+    content: "Hola";
+  }
+  80% {
+    content: "Bonjour";
+  }
+}
+
+.imageWrapper {
+  @apply relative hidden border-4 border-blue-400 rounded-full w-60 h-60;
+  /* laptop */
+  @apply md:block;
+}
+
+.imageWrapper span img {
+  @apply rounded-full;
+}
+
+.resumeBtnWrapper {
+  @apply flex items-center justify-start;
+}
+
+.resumeBtnWrapper button {
+  @apply px-4 py-2 mt-4 text-xl font-semibold text-blue-400 border-2 border-blue-100 rounded-md;
+}
+
+.resumeBtnWrapper button:hover {
+  @apply text-blue-900 transition-all duration-500 bg-blue-400 border-blue-400;
+}
+
+.socialLinks {
+  @apply flex gap-4 mt-4 mb-2;
+}
+
+.socialLinks svg {
+  @apply w-5 h-5;
+}
+
+.socialLinks button {
+  @apply p-2 bg-blue-900 rounded-full;
+}
+
+.socialLinks button:hover {
+  @apply transition-all duration-300 bg-transparent;
+}

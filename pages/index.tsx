@@ -1,14 +1,13 @@
 import type { NextPage } from "next";
+import { Home } from "../lib/containers/Home/Home";
 import { BaseLayout } from "../lib/layouts/BaseLayout";
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
-    <BaseLayout>
-      <div>
-        <h1 className="text-3xl">Hello world!</h1>
-      </div>
+    <BaseLayout isHomePage>
+      <Home />
     </BaseLayout>
   );
 };
 
-export default Home;
+export default HomePage;
