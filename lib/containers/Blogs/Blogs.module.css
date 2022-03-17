@@ -1,0 +1,24 @@
+.root h1 {
+  @apply text-2xl font-semibold text-blue-400;
+}
+
+.blogCard {
+  @apply flex flex-col gap-2 p-4 mb-8 text-justify text-blue-900 bg-blue-100 rounded-md shadow-sm shadow-blue-200;
+}
+
+.title {
+  @apply my-2 text-xl font-semibold;
+}
+
+.date,
+.readTime {
+  @apply text-sm text-black;
+}
+
+.excerpt {
+  @apply text-black;
+}
+
+.dateReadTimeWrapper {
+  @apply flex items-center justify-between;
+}
