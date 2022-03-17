@@ -1,5 +1,5 @@
 .root {
-  @apply flex items-center justify-between text-3xl font-bold leading-normal;
+  @apply flex items-center justify-between my-8 text-3xl font-bold leading-normal;
 }
 
 .professionText {

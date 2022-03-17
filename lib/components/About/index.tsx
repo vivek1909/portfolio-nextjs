@@ -1,13 +1,14 @@
 import { FC } from "react";
 import { SKILLS } from "../../../constants/Skills";
 import { ContactForm } from "../../containers/ContactForm";
+import { Experience } from "../Experience/Experience";
 import classes from "./About.module.css";
 
 export const About: FC = () => {
   return (
     <div className={classes.root}>
       <div>
-        <h1 className={classes.heading}>Who Am I?</h1>
+        <h1 className={classes.heading}># Who Am I?</h1>
         <p>
           I&apos;m Vivek Mittal, currently based out of New Delhi, IN. I&apos;m
           a Software Engineer at Shaadi.com. I work with various frontend tools.
@@ -17,8 +18,9 @@ export const About: FC = () => {
         </p>
       </div>
       <br />
+      <br />
       <div className={classes.skills}>
-        <h1 className={classes.heading}>What I work with?</h1>
+        <h1 className={classes.heading}># What I work with?</h1>
         <div className={classes.skillsList}>
           {SKILLS.map((skill) => (
             <div key={skill.name} className={classes.skillWrapper}>
@@ -29,8 +31,15 @@ export const About: FC = () => {
         </div>
       </div>
       <br />
+      <br />
       <div>
-        <h1 className={classes.heading}>Want to contact me?</h1>
+        <h1 className={classes.heading}># My professional journey so far</h1>
+        <Experience />
+      </div>
+      <br />
+      <br />
+      <div>
+        <h1 className={classes.heading}># Want to contact me?</h1>
         <p>
           Want to talk about stock market or frontend or both? You can find
           me&nbsp;
