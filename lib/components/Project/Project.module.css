@@ -1,0 +1,19 @@
+.root {
+  @apply mb-4 bg-slate-300 text-blue-900 p-4 rounded-md;
+}
+
+.innerWrapper {
+  @apply flex items-center justify-between mb-4;
+}
+
+.title {
+  @apply font-bold text-xl;
+}
+
+.description {
+  @apply text-black;
+}
+
+.techStack {
+  @apply text-sm mt-4 font-semibold;
+}
