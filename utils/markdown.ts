@@ -9,5 +9,6 @@ export const markdownToHtml = async (markdown: any) => {
     // @ts-ignore
     .use(prism)
     .process(markdown);
+
   return result.toString();
 };
