@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
+import { FaArrowCircleUp } from "react-icons/fa";
 import { MenuItems } from "../../../types/menu";
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
@@ -15,6 +16,31 @@ export const BaseLayout: FC<Props> = ({
   activeMenu,
   isHomePage = false,
 }) => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
+  const onScroll = () => {
+    if (window.pageYOffset > 600) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={classes.root}>
       <Head>
@@ -57,6 +83,11 @@ export const BaseLayout: FC<Props> = ({
       </Head>
       <Navbar activeMenu={activeMenu} />
       <div className={classes.mainContent}>{children}</div>
+      {showButton && (
+        <button onClick={scrollToTop} className={classes.scrollToTopButton}>
+          <FaArrowCircleUp />
+        </button>
+      )}
       <Footer isHomePage={isHomePage} />
     </div>
   );

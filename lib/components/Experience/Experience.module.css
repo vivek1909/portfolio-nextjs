@@ -11,7 +11,7 @@
 }
 
 .contentWrapper {
-  @apply max-w-md p-6 mb-10 ml-6 bg-gray-100 rounded-lg shadow-lg md:w-full;
+  @apply max-w-md p-4 mb-10 ml-4 bg-gray-100 rounded-lg shadow-lg md:w-full;
 }
 
 .contentHeadingWrapper {

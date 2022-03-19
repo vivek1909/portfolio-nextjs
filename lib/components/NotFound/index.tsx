@@ -53,11 +53,13 @@ export const NotFound: FC = () => {
         height={300}
         width={300}
       />
-      <Link href={"/"}>
-        <a>
-          <button className={classes.goHomeBtn}>Go Home</button>
-        </a>
-      </Link>
+      <div className={classes.goHomeBtnWrapper}>
+        <Link href={"/"}>
+          <a>
+            <button>Go Home</button>
+          </a>
+        </Link>
+      </div>
     </div>
   );
 };
