@@ -10,3 +10,11 @@
   /* laptop */
   @apply lg:w-2/5;
 }
+
+.scrollToTopButton {
+  @apply fixed rounded-full bg-slate-900 bottom-12 right-12;
+}
+
+.scrollToTopButton svg {
+  @apply w-8 h-8;
+}

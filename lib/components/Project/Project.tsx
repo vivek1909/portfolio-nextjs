@@ -15,9 +15,11 @@ export const Project: FC<Props> = ({ projectDetails }) => {
     <div className={classes.root}>
       <div className={classes.innerWrapper}>
         <p className={classes.title}>{title}</p>
-        <a href={projectURL} target={"_blank"} rel={"noreferrer"}>
-          <FaExternalLinkAlt />
-        </a>
+        {projectDetails.projectURL !== "#" && (
+          <a href={projectURL} target={"_blank"} rel={"noreferrer"}>
+            <FaExternalLinkAlt />
+          </a>
+        )}
       </div>
       <p className={classes.description}>{description}</p>
       <p className={classes.techStack}>{techStack}</p>
