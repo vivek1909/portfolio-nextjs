@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import classes from "./Projects.module.css";
 import { Project } from "../Project/Project";
-import { ProjectsDetails } from "../../../constants/projects";
+import { ProjectsDetails } from "../../../constants/Projects";
 
 export const Projects: FC = () => {
   return (
