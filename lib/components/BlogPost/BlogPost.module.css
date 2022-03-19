@@ -1,0 +1,41 @@
+.article {
+  @apply prose text-justify text-white;
+}
+
+.article a {
+  @apply text-blue-400;
+}
+
+.article a:hover {
+  @apply text-blue-500 transition-all duration-300 ease-in-out;
+}
+
+.article h2 {
+  @apply text-blue-400;
+}
+
+.article hr {
+  @apply opacity-50;
+}
+
+.article p > code,
+.article blockquote,
+.article p > strong {
+  @apply text-orange-300;
+}
+
+.title {
+  @apply mb-2 text-2xl font-semibold text-justify text-orange-300;
+}
+
+.innerWrapper {
+  @apply flex items-center justify-between text-sm opacity-50;
+}
+
+.goBackLink {
+  @apply flex items-center gap-2 my-4 cursor-pointer w-fit;
+}
+
+.goBackLink:hover {
+  @apply opacity-50;
+}
