@@ -84,7 +84,11 @@ export const BaseLayout: FC<Props> = ({
       <Navbar activeMenu={activeMenu} />
       <div className={classes.mainContent}>{children}</div>
       {showButton && (
-        <button onClick={scrollToTop} className={classes.scrollToTopButton}>
+        <button
+          onClick={scrollToTop}
+          aria-label={"scroll-to-top"}
+          className={classes.scrollToTopButton}
+        >
           <FaArrowCircleUp />
         </button>
       )}

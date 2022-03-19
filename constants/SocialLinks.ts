@@ -10,18 +10,22 @@ export const SOCIAL_LINKS = [
   {
     link: "https://github.com/vivek1909",
     component: FaGithub,
+    name: "Github",
   },
   {
     link: "https://www.linkedin.com/in/vivek-mittal/",
     component: FaLinkedin,
+    name: "Linkedin",
   },
   {
     link: "https://twitter.com/vivek96_",
     component: FaTwitter,
+    name: "Twitter",
   },
   {
     link: "https://medium.com/@vivekmittal199",
     component: FaMedium,
+    name: "Medium",
   },
 ];
 
@@ -29,17 +33,21 @@ export const LIBRARIES_USED_LINKS = [
   {
     link: "https://nextjs.org/",
     component: SiNextdotjs,
+    name: "Next.js",
   },
   {
     link: "https://tailwindcss.com/",
     component: SiTailwindcss,
+    name: "TailwindCSS",
   },
   {
     link: "https://www.framer.com/motion/",
     component: SiFramer,
+    name: "Framer Motion",
   },
   {
     link: "https://www.typescriptlang.org/",
     component: SiTypescript,
+    name: "Typescript",
   },
 ];

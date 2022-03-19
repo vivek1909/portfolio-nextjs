@@ -17,9 +17,9 @@ export const Hero: FC = () => {
         </div>
         <div className={classes.socialLinks}>
           {SOCIAL_LINKS.map((socialLink) => (
-            <button key={socialLink.link}>
+            <button key={socialLink.link} aria-label={socialLink.name}>
               <a href={socialLink.link} target={"_blank"} rel={"noreferrer"}>
-                {<socialLink.component />}
+                {<socialLink.component aria-label={socialLink.name} />}
               </a>
             </button>
           ))}
