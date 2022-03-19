@@ -36,7 +36,9 @@ export const Footer: FC<Props> = ({ isHomePage = false }) => {
             target={"_blank"}
             rel={"noreferrer nofollow"}
           >
-            <span>{<externalLink.component />}</span>
+            <span>
+              {<externalLink.component aria-label={externalLink.name} />}
+            </span>
           </a>
         ))}
       </p>
