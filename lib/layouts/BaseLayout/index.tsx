@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import Head from "next/head";
 import { FC, useEffect, useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
+import { whileHoverButton } from "../../../constants/Animations";
 import { MenuItems } from "../../../types/menu";
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
@@ -84,13 +86,14 @@ export const BaseLayout: FC<Props> = ({
       <Navbar activeMenu={activeMenu} />
       <div className={classes.mainContent}>{children}</div>
       {showButton && (
-        <button
+        <motion.button
           onClick={scrollToTop}
           aria-label={"scroll-to-top"}
           className={classes.scrollToTopButton}
+          whileHover={whileHoverButton}
         >
           <FaArrowCircleUp />
-        </button>
+        </motion.button>
       )}
       <Footer isHomePage={isHomePage} />
     </div>

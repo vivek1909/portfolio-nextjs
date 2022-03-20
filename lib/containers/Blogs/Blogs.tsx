@@ -1,5 +1,13 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { FC, useMemo } from "react";
+import {
+  animateFromLeftVariant,
+  animateFromRightVariant,
+  hiddenToBlockAnimationVariant,
+  scaleAnElementVariants,
+  scaleAnimation,
+} from "../../../constants/Animations";
 import { IBlogMetaData } from "../../../types/blog";
 import classes from "./Blogs.module.css";
 
@@ -16,13 +24,26 @@ export const Blogs: FC<Props> = ({ blogsMetaData }) => {
 
   return (
     <div className={classes.root}>
-      <h1>/blogs</h1>
+      <motion.h1
+        initial={"hidden"}
+        whileInView={"visible"}
+        variants={scaleAnElementVariants()}
+      >
+        /blogs
+      </motion.h1>
       <br />
       {sortedBlogsInDescOrder.map(
         ({ slug, title, excerpt, readTime, date }) => (
           <Link key={slug} href={`posts/${slug}`}>
             <a>
-              <div className={classes.blogCard}>
+              <motion.div
+                initial={"hidden"}
+                whileInView={"visible"}
+                variants={hiddenToBlockAnimationVariant}
+                className={classes.blogCard}
+                whileHover={scaleAnimation}
+                whileTap={scaleAnimation}
+              >
                 <div className={classes.dateReadTimeWrapper}>
                   <p className={classes.date}>
                     {new Date(date).toDateString()}
@@ -31,7 +52,7 @@ export const Blogs: FC<Props> = ({ blogsMetaData }) => {
                 </div>
                 <p className={classes.title}>{title}</p>
                 <p className={classes.excerpt}>{excerpt}</p>
-              </div>
+              </motion.div>
             </a>
           </Link>
         )

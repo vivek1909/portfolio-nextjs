@@ -3,11 +3,20 @@ import classes from "./Hero.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { SOCIAL_LINKS } from "../../../constants/SocialLinks";
+import { motion } from "framer-motion";
+import {
+  animateFromLeftVariant,
+  animateFromRightVariant,
+} from "../../../constants/Animations";
 
 export const Hero: FC = () => {
   return (
     <div className={classes.root}>
-      <div>
+      <motion.div
+        initial={"hidden"}
+        whileInView={"visible"}
+        variants={animateFromLeftVariant}
+      >
         <div>
           <p className={classes.greetingMultiLingual}>,</p>
           <p>I&apos;m Vivek Mittal</p>
@@ -31,15 +40,20 @@ export const Hero: FC = () => {
             </a>
           </Link>
         </div>
-      </div>
-      <div className={classes.imageWrapper}>
+      </motion.div>
+      <motion.div
+        initial={"hidden"}
+        whileInView={"visible"}
+        variants={animateFromRightVariant}
+        className={classes.imageWrapper}
+      >
         <Image
           src={"/images/vivek.jpeg"}
           alt={"Vivek"}
           layout={"fill"}
           objectFit={"cover"}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
