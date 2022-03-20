@@ -3,10 +3,17 @@ import Image from "next/image";
 import classes from "./NotFound.module.css";
 import Link from "next/link";
 import Head from "next/head";
+import { motion } from "framer-motion";
+import { scaleAnElementVariants } from "../../../constants/Animations";
 
 export const NotFound: FC = () => {
   return (
-    <div className={classes.root}>
+    <motion.div
+      initial={"hidden"}
+      whileInView={"visible"}
+      variants={scaleAnElementVariants()}
+      className={classes.root}
+    >
       <Head>
         <link
           rel="preload"
@@ -60,6 +67,6 @@ export const NotFound: FC = () => {
           </a>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };

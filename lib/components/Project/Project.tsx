@@ -3,6 +3,8 @@ import classes from "./Project.module.css";
 import Image from "next/image";
 import { FaExternalLinkAlt, FaLink } from "react-icons/fa";
 import { IProjectDetails } from "../../../types/projects";
+import { motion } from "framer-motion";
+import { hiddenToBlockAnimationVariant } from "../../../constants/Animations";
 
 interface Props {
   projectDetails: IProjectDetails;
@@ -12,7 +14,12 @@ export const Project: FC<Props> = ({ projectDetails }) => {
   const { title, description, techStack, projectURL } = projectDetails;
 
   return (
-    <div className={classes.root}>
+    <motion.div
+      initial={"hidden"}
+      whileInView={"visible"}
+      variants={hiddenToBlockAnimationVariant}
+      className={classes.root}
+    >
       <div className={classes.innerWrapper}>
         <p className={classes.title}>{title}</p>
         {projectDetails.projectURL !== "#" && (
@@ -23,6 +30,6 @@ export const Project: FC<Props> = ({ projectDetails }) => {
       </div>
       <p className={classes.description}>{description}</p>
       <p className={classes.techStack}>{techStack}</p>
-    </div>
+    </motion.div>
   );
 };

@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import { FC } from "react";
+import { scaleAnElementVariants } from "../../../constants/Animations";
 import {
   LIBRARIES_USED_LINKS,
   SOCIAL_LINKS,
@@ -11,7 +13,12 @@ interface Props {
 
 export const Footer: FC<Props> = ({ isHomePage = false }) => {
   return (
-    <div className={classes.root}>
+    <motion.div
+      initial={"hidden"}
+      whileInView={"visible"}
+      variants={scaleAnElementVariants()}
+      className={classes.root}
+    >
       {!isHomePage && (
         <div className={classes.socialLinks}>
           {SOCIAL_LINKS.map((socialLink) => (
@@ -42,6 +49,6 @@ export const Footer: FC<Props> = ({ isHomePage = false }) => {
           </a>
         ))}
       </p>
-    </div>
+    </motion.div>
   );
 };
