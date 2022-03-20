@@ -32,7 +32,7 @@ const BlogsPage: NextPage<Props> = (context) => {
           content={"All the blog posts written by Vivek Mittal"}
         />
         <meta property="og:title" content={"Vivek Mittal | Blogs"} />
-        <meta property="og:image" content={`/images/vivek.jpeg`} />
+        <meta property="og:image" content={`/images/logo.svg`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={"Vivek Mittal | Blogs"} />
         <meta
