@@ -1,0 +1,47 @@
+---
+title: How I built my portfolio using Next.js, TailwindCSS, TypeScript and Framer Motion
+slug: how-i-built-my-portfolio
+date: "2022-03-21"
+readTime: 2 min read
+featureImage: portfolio.png
+excerpt: In this blog, I'll walk you through the tech stack I used for creating my personal portfolio and the reason behind choosing that particular package/library.
+---
+
+By mid february'22 while serving my notice period I decided to migrate my portfolio from CRA to next.js and also gave a thought about adding the blogs to my own [portfolio website](https://vivekmittal.vercel.app). So I decided to go with the following tech stack listed below:
+
+1. Next.js
+2. TypeScript
+3. Framer Motion
+4. TailwindCSS
+5. SendGrid
+
+## Next.js
+
+[Next.js](https://nextjs.org/) is a production ready framework for [React](https://reactjs.org/). It comes with some great features out of the box like SSR/SSG/ISR, route pre-fetching, file system based routing, and most importantly SEO. So when I created my portfolio with CRA the TypeScript support is not good along with poor SEO. The need to have a separate backend server just to make your contact form working was a nightmare (if one is not using [Netlify](https://www.netlify.com/)).
+Due to all the above problems I decided to go with Next.js
+
+## TypeScript
+
+[TypeScript](https://www.typescriptlang.org/) is a superset of JavaScript which provides optional typing and compiles down to JavaScript. While working with JavaScript I would occasionally struggle with type of a variable/object or any data type. That's where TypeScript comes to the rescue and let's us make our application type safe from the beginning itself.
+Once you're introduced with TypeScript, you will never go back to writing JavaScript.
+
+## Framer Motion
+
+[Framer Motion](https://www.framer.com/motion/) is a production ready animation library for React. I felt the need to add some "cool" animations to my portfolio so that it looks more alive and interactive. One can argue between choosing [React Spring](https://react-spring.io/) or [React Motion](https://github.com/chenglou/react-motion) but that depends on the use-case and since I've already worked with Framer motion before so I went with this.
+
+## TailwindCSS
+
+[TailwindCSS](https://tailwindcss.com/) is a utility first CSS framework which is highly customisable and can be optimised using PurgeCSS. It helps in building complex responsive layouts easily.
+
+## SendGrid
+
+So I've a contact form in my portfolio website and I was going to host it on [Vercel](https://vercel.com/) and not Netlify so I was in need of an emailing service to work flawlessly with my contact form which can be customised according to my needs as well. Then I did some research and came across [SendGrid](https://sendgrid.com/) which can be easily integrated with Next.js (thanks to the ability of Next.js to add server code) and decided to use this.
+
+## Miscellaneous
+
+There are some other packages such as remark-prism, react-toastify, react-icons and next-pwa which I used to add syntax highlighting, notifications, icons and make my application a progressive web app (PWA) respectively.
+
+## Conclusion and what's next?
+
+It took me around 2 weeks on and off to complete my portfolio website.
+Down the road, I'll add sitemap, optimise it further for mobile devices, add reactions to blog-posts, add a CDN to serve static-images and maybe use a CMS to store and fetch all my blogs/projects data.
