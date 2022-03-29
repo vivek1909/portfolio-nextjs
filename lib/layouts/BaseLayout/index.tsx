@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useViewportScroll } from "framer-motion";
 import Head from "next/head";
 import { FC, useEffect, useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
@@ -11,14 +11,17 @@ import classes from "./BaseLayout.module.css";
 interface Props {
   activeMenu?: MenuItems;
   isHomePage?: boolean;
+  isBlogPost?: boolean;
 }
 
 export const BaseLayout: FC<Props> = ({
   children,
   activeMenu,
   isHomePage = false,
+  isBlogPost = false,
 }) => {
   const [showButton, setShowButton] = useState(false);
+  const { scrollYProgress } = useViewportScroll();
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
@@ -83,6 +86,14 @@ export const BaseLayout: FC<Props> = ({
           crossOrigin=""
         />
       </Head>
+      {isBlogPost && (
+        <motion.div
+          className={classes.scrollProgress}
+          style={{
+            scaleX: scrollYProgress,
+          }}
+        />
+      )}
       <Navbar activeMenu={activeMenu} />
       <div className={classes.mainContent}>{children}</div>
       {showButton && (
