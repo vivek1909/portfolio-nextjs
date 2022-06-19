@@ -14,7 +14,7 @@ interface Props {
 
 const BlogPostPage: NextPage<Props> = ({ content, meta }) => {
   return (
-    <BaseLayout activeMenu={MenuItems.BLOGS}>
+    <BaseLayout isBlogPost activeMenu={MenuItems.BLOGS}>
       <Head>
         <meta charSet="utf-8" />
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
