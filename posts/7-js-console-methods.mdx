@@ -1,0 +1,116 @@
+---
+title: 7 different JavaScript console methods you never knew existed 🤯
+slug: 7-js-console-methods
+date: "2022-06-14"
+readTime: 5 min read
+featureImage: portfolio.png
+excerpt: So being a JavaScript developer whenever I have to debug my code, the first thing that comes to my mind is adding a console.log(). Is this the only way of debugging using a console object? Why all my console data looks similar? What if I can add some colors to my console data? What if I can organize my data correctly?
+---
+
+So being a JavaScript developer whenever I have to debug my code, the first thing that comes to my mind is adding a console.log(). Is this the only way of debugging using a console object? Why all my console data looks similar? What if I can add some colors to my console data? What if I can organize my data correctly?
+
+**UGHHH!!!!**
+
+---
+
+## JavaScript console methods to the rescue
+Apart from the **_log()_** method, the console object provides us with some more useful methods which we can use to boost our productivity and take our debugging skills to the next level. So in this article, we’ll briefly understand 7 of the many different JavaScript console methods that remain hidden to most of the developers.
+
+---
+
+## #1 console.table()
+You as a developer must have put an array or object inside a **_console.log()_** . Well there’s a better way of doing it by using **_console.table()_** which will structure your code for better readability. You can also sort your table in any way you like without adding any extra piece of code.
+
+> Example
+
+_Code_
+
+![console.table code](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ocq846ac7sdt8tenvcwh.png)
+
+_Output_
+![console.table output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/q3dwlk9v8n8ff29w955l.png)
+
+## #2 console.assert()
+**_console.assert()_** comes in handy when you want to print some data on the basis of a certain condition, if the assertion is false then it’ll be printed otherwise nothing will be printed in case it’s true.
+
+> Example
+
+_Code_
+
+![console.assert code](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ngonyw8my9xx9sm91x6m.png)
+
+_Output_
+
+![console.assert output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0uk4okty0k4pmp36ukrm.png)
+
+## #3 console.dir()
+The **_console.dir()_** displays an interactive list of the properties of the specified JavaScript object. The output is presented as a hierarchical listing with disclosure triangles that let you see the contents of child objects. This method is very much similar to **_console.log()_** but the key difference is visible when we start playing with DOM nodes. **_console.log()_** prints the element in an HTML-like tree while **_console.dir()_** prints the element in a JSON-like tree.
+
+**_console.log()_** gives special treatment to DOM elements, whereas **_console.dir()_** does not. This is often useful when trying to see the full representation of the DOM object.
+
+> Example
+
+![console.dir code and output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9hz9tww7ciakt09crz5e.png)
+
+## #4 console.count()
+Let’s say you want to see how many times a certain part of your code is being run, **_console.count()_** can help you out as it prints the number of times a part of your code for example a function runs.
+
+> Example
+
+_Code_
+
+![console.count code](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l8sauar36m5g3y4a1kux.png)
+
+_Output_
+
+![console.count output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/66z9mfhece6p580rr164.png)
+
+## #5 console.time()
+To become a better JavaScript developer, one should understand the performance impact of different types of loops. **_console.time()_** can help you as it prints the amount of time taken by a particular section of your code to execute.
+
+> Example
+
+_Code_
+
+![console.time code](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fn5uflcaeimxg6p7f8zc.png)
+
+_Output_
+
+![console.time output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r8z0rmy6fef2s5we6a34.png)
+
+## #6 console.group()
+This method is helpful when you want to group your console data which is similar. We can even do nesting and show relationship among them.
+
+> Example
+
+_Code_
+
+![console.group code](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/taw3hjszw3oyglldxg5g.png)
+
+_Output_
+
+![console.group output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/92qk88co0j020l14czvb.png)
+
+## #7 console.trace()
+Dealing with bugs in a large and complex codebase where you don’t exactly know the root cause of it can quickly become frustrating and time consuming. Understanding the `code execution flow` can help you quickly deal with those bugs and **_console.trace()_** helps you deal with those bugs better.
+
+In simple terms it logs to the console the call stack that exists at the point **_console.trace()_** is called.
+
+> Example
+
+_Code_
+
+![console.trace code](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/661koy7rcs4s6fzaub8w.png)
+
+_Output_
+
+![console.trace output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gqvevry2dl58ds1tavok.png)
+
+---
+
+## Further Reading
+
+This isn’t everything. There’s so many other console methods that you can read about and leverage them in your projects and become **_super productive_**. If you’ve come to this point then I’d invite you to discover more ways to leverage browser DevTools to their full potential. 
+
+- [console - Web APIs | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/API/console)
+- [Console API reference - Chrome Developers](https://developer.chrome.com/docs/devtools/console/api/)
