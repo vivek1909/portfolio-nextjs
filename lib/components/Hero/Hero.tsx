@@ -34,7 +34,7 @@ export const Hero: FC = () => {
           ))}
         </div>
         <div className={classes.resumeBtnWrapper}>
-          <Link href={"/docs/Vivek_Mittal_Class_of_2021.pdf"}>
+          <Link href={"/docs/Vivek_Mittal_Resume.pdf"}>
             <a>
               <button>Resume</button>
             </a>
