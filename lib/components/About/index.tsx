@@ -19,8 +19,7 @@ export const About: FC = () => {
           I&apos;m Vivek Mittal, currently based out of New Delhi, IN. I&apos;m
           a Software Engineer at Shaadi.com. I work with various frontend tools.
           All the skills and tools I use are self-taught over many years of
-          practice and expanding my horizons. I&apos;m also a part time Bank
-          Nifty options trader.
+          practice and expanding my horizons.
         </p>
       </motion.div>
       <br />

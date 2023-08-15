@@ -6,23 +6,15 @@ export const ProfessionalExperience: IProfessionalExperience[] = [
     icon: FaCalendar,
     company: "Shaadi.com",
     duration: "March-2022 - Present",
-    description: "Responsible for creating and testing the UI components.",
+    description: "I enhanced engagement, boosting user interaction by ~20%. Introduced Astro compatibility feature, upgraded legacy PHP to React/Next.js for better UX. Successfully executed bug-free Astro project, recognized as Rockstar of the month. Timely, bug-minimal project delivery lauded by Product Manager. Achieved ~90% type safety with TypeScript, led code improvements. Revamped Daily Recommendation page, optimizing performance.",
     designation: "Software Engineer I",
   },
   {
     icon: FaCalendar,
     company: "Affordmedical Technologies Pvt Ltd.",
-    duration: "July-2021 - March-2022",
+    duration: "December-2020 - March-2022",
     description:
-      "Collaborated with a teammate and bootstrapped a next.js frontend application from scratch along with storybook setup. Responsible for writing the production ready code along with proper test coverage (95% and above). Collaborated with backend team for the APIs. Responsible for leading the frontend team of 3 devs including me while doing code reviews, manual, unit and e2e testing. Responsible for fixing the pipeline bugs and implemeted parallelisation for cypress tests in pipeline and successfully reduced the pipeline run time by 45% for tests stage.",
+      "Led NextJS app development, established Storybook for UI, integrated APIs, extended Material UI for improved interface. Mentored a frontend team, conducted code reviews. Addressed pipeline issues, optimized code delivery. Implemented Cypress test parallelization, enhancing efficiency by 45%. Emphasis on testing and design insights improved aesthetics and performance.",
     designation: "Full Stack Developer",
-  },
-  {
-    icon: FaCalendar,
-    company: "Affordmedical Technologies Pvt Ltd.",
-    duration: "December-2020 - June-2021",
-    description:
-      "Bootstrapped a next.js frontend application from scratch. Responsible for writing the production ready code along with proper test coverage (95% and above). Contributed in the designing aspects of the application by creating the mockups on Figma. Collaborated with backend team for the APIs.",
-    designation: "Full Stack Developer Intern",
   },
 ];

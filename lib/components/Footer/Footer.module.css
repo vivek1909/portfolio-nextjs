@@ -10,11 +10,6 @@
   @apply w-5 h-5;
 }
 
-.socialLinks svg:hover,
-.builtByText svg:hover {
-  @apply transition-all duration-500 scale-125;
-}
-
 .builtByText {
   @apply flex flex-row items-center justify-center gap-2;
 }
