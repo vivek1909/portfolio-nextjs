@@ -15,7 +15,7 @@ const HomePage: NextPage = () => {
         <title>Vivek Mittal | Software Engineer</title>
         <meta
           content={
-            "Vivek Mittal is a Software Engineer-1 currently working at Shaadi.com with more than 1 year of experience in building scalable and reliable frontend web applications."
+            "Vivek Mittal is a Software Engineer-1 currently working at Shaadi.com with more than 2.5 years of experience in building scalable and reliable frontend web applications."
           }
           name="description"
         />
@@ -24,7 +24,7 @@ const HomePage: NextPage = () => {
         <meta
           property="og:description"
           content={
-            "Vivek Mittal is a Software Engineer-1 currently working at Shaadi.com with more than 1 year of experience in building scalable and reliable frontend web applications."
+            "Vivek Mittal is a Software Engineer-1 currently working at Shaadi.com with more than 2.5 years of experience in building scalable and reliable frontend web applications."
           }
         />
         <meta
@@ -40,7 +40,7 @@ const HomePage: NextPage = () => {
         <meta
           name="twitter:description"
           content={
-            "Vivek Mittal is a Software Engineer-1 currently working at Shaadi.com with more than 1 year of experience in building scalable and reliable frontend web applications."
+            "Vivek Mittal is a Software Engineer-1 currently working at Shaadi.com with more than 2.5 years of experience in building scalable and reliable frontend web applications."
           }
         />
       </Head>

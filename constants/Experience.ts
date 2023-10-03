@@ -6,7 +6,7 @@ export const ProfessionalExperience: IProfessionalExperience[] = [
     icon: FaCalendar,
     company: "Shaadi.com",
     duration: "March-2022 - Present",
-    description: "I enhanced engagement, boosting user interaction by ~20%. Introduced Astro compatibility feature, upgraded legacy PHP to React/Next.js for better UX. Successfully executed bug-free Astro project, recognized as Rockstar of the month. Timely, bug-minimal project delivery lauded by Product Manager. Achieved ~90% type safety with TypeScript, led code improvements. Revamped Daily Recommendation page, optimizing performance.",
+    description: "I enhanced engagement, boosting user interaction by ~20%. Introduced Astro compatibility feature, upgraded legacy PHP to React/Next.js for better UX. Successfully executed bug-free Astro project. Timely, bug-minimal project delivery lauded by Product Manager. Achieved ~90% type safety with TypeScript, led code improvements. Revamped Daily Recommendation page, optimizing performance.",
     designation: "Software Engineer I",
   },
   {

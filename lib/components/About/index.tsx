@@ -16,7 +16,7 @@ export const About: FC = () => {
       >
         <h1 className={classes.heading}># Who Am I?</h1>
         <p>
-          I&apos;m Vivek Mittal, currently based out of New Delhi, IN. I&apos;m
+          I&apos;m Vivek Mittal, currently based out of South Mumbai, IN. I&apos;m
           a Software Engineer at Shaadi.com. I work with various frontend tools.
           All the skills and tools I use are self-taught over many years of
           practice and expanding my horizons.
@@ -33,7 +33,7 @@ export const About: FC = () => {
         <h1 className={classes.heading}># What I work with?</h1>
         <div className={classes.skillsList}>
           {SKILLS.map((skill) => (
-            <div key={skill.name} className={classes.skillWrapper}>
+            <div key={skill.name} aria-label={skill.name} className={classes.skillWrapper}>
               <skill.component />
               <p>{skill.name}</p>
             </div>
