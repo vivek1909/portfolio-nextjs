@@ -61,7 +61,7 @@ export const NotFound: FC = () => {
         width={300}
       />
       <div className={classes.goHomeBtnWrapper}>
-        <Link href={"/"}>
+        <Link legacyBehavior href={"/"}>
           <a>
             <button>Go Home</button>
           </a>

@@ -34,7 +34,7 @@ export const Blogs: FC<Props> = ({ blogsMetaData }) => {
       <br />
       {sortedBlogsInDescOrder.map(
         ({ slug, title, excerpt, readTime, date }) => (
-          <Link key={slug} href={`posts/${slug}`}>
+          <Link legacyBehavior key={slug} href={`posts/${slug}`}>
             <a>
               <motion.div
                 initial={"hidden"}

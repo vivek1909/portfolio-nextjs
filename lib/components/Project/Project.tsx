@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import classes from "./Project.module.css";
-import Image from "next/image";
-import { FaExternalLinkAlt, FaLink } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { IProjectDetails } from "../../../types/projects";
 import { motion } from "framer-motion";
 import { hiddenToBlockAnimationVariant } from "../../../constants/Animations";

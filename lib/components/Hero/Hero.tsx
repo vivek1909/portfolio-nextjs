@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import classes from "./Hero.module.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { SOCIAL_LINKS } from "../../../constants/SocialLinks";
 import { motion } from "framer-motion";
@@ -34,7 +34,7 @@ export const Hero: FC = () => {
           ))}
         </div>
         <div className={classes.resumeBtnWrapper}>
-          <Link href={"/docs/Vivek_Mittal_Resume.pdf"}>
+          <Link legacyBehavior href={"/docs/Vivek_Mittal_Resume.pdf"}>
             <a target="_blank">
               <button>Resume</button>
             </a>
