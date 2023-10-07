@@ -32,7 +32,7 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
       className={classes.root}
     >
       <motion.div>
-        <Link href={"/"}>
+        <Link legacyBehavior href={"/"}>
           <a>
             <div className={classes.logoWrapper}>
               <motion.svg
@@ -113,7 +113,7 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
         </Link>
       </motion.div>
       <div className={classes.navbarLinks}>
-        <Link href={"/posts"}>
+        <Link legacyBehavior href={"/posts"}>
           <a>
             <motion.p
               initial={"hidden"}
@@ -129,7 +129,7 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
             </motion.p>
           </a>
         </Link>
-        <Link href={"/projects"}>
+        <Link legacyBehavior href={"/projects"}>
           <a>
             <motion.p
               initial={"hidden"}

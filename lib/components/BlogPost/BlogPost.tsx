@@ -12,7 +12,7 @@ interface Props {
 export const BlogPost: FC<Props> = ({ meta, content }) => {
   return (
     <div>
-      <Link href={"/posts"}>
+      <Link legacyBehavior href={"/posts"}>
         <a className={classes.goBackLink}>
           <FaArrowCircleLeft className={classes.backButton} /> All posts
         </a>
