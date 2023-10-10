@@ -32,7 +32,7 @@ export const BaseLayout: FC<Props> = ({
   }, []);
 
   const onScroll = () => {
-    if (window.pageYOffset > 600) {
+    if (window.scrollY > 600) {
       setShowButton(true);
     } else {
       setShowButton(false);
