@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaMedium } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaDev } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -23,9 +23,9 @@ export const SOCIAL_LINKS = [
     name: "Twitter",
   },
   {
-    link: "https://medium.com/@vivekmittal199",
-    component: FaMedium,
-    name: "Medium",
+    link: "https://dev.to/vivek96_",
+    component: FaDev,
+    name: "Dev.to",
   },
 ];
 

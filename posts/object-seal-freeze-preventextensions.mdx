@@ -1,0 +1,99 @@
+---
+title: Understanding Object.seal(), Object.freeze(), and Object.preventExtensions() in JavaScript
+slug: object-seal-freeze-preventextensions
+date: "2023-10-15"
+readTime: 2 min read
+featureImage: portfolio/portfolio.png
+excerpt: Three essential methods for controlling the mutability of objects in JavaScript are Object.seal(), Object.freeze(), and Object.preventExtensions(). These methods play a crucial role in ensuring the integrity and immutability of objects, providing developers with the tools they need to maintain data consistency and security.
+---
+
+## Introduction
+
+JavaScript is a versatile and powerful programming language, known for its ability to manipulate and manage objects. Three essential methods for controlling the mutability of objects in JavaScript are `Object.seal()`, `Object.freeze()`, and `Object.preventExtensions()`. These methods play a crucial role in ensuring the integrity and immutability of objects, providing developers with the tools they need to maintain data consistency and security. In this article, we'll explore each of these methods in detail and understand their use cases.
+
+## 1. Object.seal()
+
+The `Object.seal()` method is used to seal an object, which means that it prevents the addition or removal of properties from that object. It also makes all existing properties non-configurable, meaning they cannot be reconfigured or deleted. However, the values of the existing properties can still be modified.
+
+```javascript
+const sealedObject = {
+  name: 'John',
+  age: 30
+};
+
+Object.seal(sealedObject);
+
+// Adding a new property is not allowed
+sealedObject.location = 'New York'; // Error
+
+// Deleting properties is not allowed
+delete sealedObject.age; // Error
+
+// Modifying existing properties is allowed
+sealedObject.name = 'Jane';
+```
+
+Use cases for `Object.seal()`:
+- When you want to prevent the addition or deletion of properties, but still allow property value changes.
+- Ensuring that certain properties remain consistent and unaltered throughout the object's lifetime.
+
+## 2. Object.freeze()
+
+The `Object.freeze()` method takes the concept of immutability a step further. When you freeze an object, it becomes completely immutable. This means that not only can you not add or delete properties, but you also cannot modify the values of existing properties.
+
+```javascript
+const frozenObject = {
+  name: 'Alice',
+  age: 25
+};
+
+Object.freeze(frozenObject);
+
+// Adding a new property is not allowed
+frozenObject.location = 'Paris'; // Error
+
+// Deleting properties is not allowed
+delete frozenObject.age; // Error
+
+// Modifying existing properties is not allowed
+frozenObject.name = 'Bob'; // Error
+```
+
+Use cases for `Object.freeze()`:
+- When you need to create objects with constant, unchanging data.
+- Ensuring that data remains consistent and cannot be unintentionally modified.
+
+
+## 3. Object.preventExtensions()
+
+The `Object.preventExtensions()` method is used to prevent the addition of new properties to an object. While it doesn't affect the configurability or writability of existing properties like `Object.seal()`, it stops the object from being extended with new properties.
+
+```javascript
+const extendedObject = {
+  name: 'Eve',
+  age: 28
+};
+
+Object.preventExtensions(extendedObject);
+
+// Adding a new property is not allowed
+extendedObject.location = 'Berlin'; // Error
+
+// Deleting properties is allowed
+delete extendedObject.age;
+
+// Modifying existing properties is allowed
+extendedObject.name = 'Charlie';
+```
+
+Use cases for `Object.preventExtensions()`:
+- When you want to prevent new properties from being accidentally added to an object while still allowing modification and deletion of existing properties.
+- Ensuring that an object has a fixed set of properties without any extensions.
+
+## Conclusion
+
+In JavaScript, the `Object.seal()`, `Object.freeze()`, and `Object.preventExtensions()` methods provide developers with ways to control the mutability of objects, based on their specific requirements. By applying these methods appropriately, you can enhance the security and stability of your code, reduce the risk of unintentional data changes, and ensure that your objects behave as expected throughout their lifecycle. Understanding when and how to use these methods is essential for mastering JavaScript's object manipulation capabilities.
+
+---
+
+> Happy Coding!
