@@ -16,7 +16,7 @@ export const Experience: FC = () => {
                 <div className={classes.contentHeadingWrapper}>
                   <p>{experience.designation}</p>
                   <p>({experience.company})</p>
-                  <p>{experience.duration}</p>
+                  <p className={classes.duration}>{experience.duration}</p>
                 </div>
                 <p className={classes.content}>{experience.description}</p>
               </div>

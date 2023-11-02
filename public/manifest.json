@@ -1,32 +1,32 @@
 {
-    "theme_color": "#0f1729",
-    "background_color": "#0f1729",
-    "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
-    "name": "vivek-mittal-portfolio",
-    "short_name": "vivek",
-    "description": "Vivek Mittal is a Software Engineer-1 currently working at Shaadi.com with more than 2.5 years of experience in building scalable and reliable frontend web applications.",
-    "icons": [
-        {
-            "src": "/icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/icon-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
-        },
-        {
-            "src": "/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "theme_color": "#0f1729",
+  "background_color": "#0f1729",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "vivek-mittal-portfolio",
+  "short_name": "vivek",
+  "description": "Vivek Mittal is a Software Engineer II currently working at Shaadi.com with 3 years of experience in building scalable and reliable frontend web applications.",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

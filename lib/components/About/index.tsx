@@ -16,10 +16,16 @@ export const About: FC = () => {
       >
         <h1 className={classes.heading}># Who Am I?</h1>
         <p>
-          I&apos;m Vivek Mittal, currently based out of South Mumbai, IN. I&apos;m
-          a Software Engineer at Shaadi.com. I work with various frontend tools.
-          All the skills and tools I use are self-taught over many years of
-          practice and expanding my horizons.
+          I'm Vivek Mittal, a self-taught Software Engineer II (Web) based in
+          South Mumbai, IN, and I'm currently a key contributor at Shaadi.com.
+          With a strong focus on frontend development, I've dedicated years to
+          mastering the craft, always staying on the cutting edge of web
+          technologies. My journey in web development has been marked by
+          continuous self-improvement and a relentless pursuit of knowledge. I'm
+          deeply passionate about creating exceptional user experiences and
+          utilizing technology to forge meaningful connections. My role at
+          Shaadi.com allows me to apply this passion daily, ensuring our users
+          have the best online matchmaking experience possible.
         </p>
       </motion.div>
       <br />
@@ -33,7 +39,11 @@ export const About: FC = () => {
         <h1 className={classes.heading}># What I work with?</h1>
         <div className={classes.skillsList}>
           {SKILLS.map((skill) => (
-            <div key={skill.name} aria-label={skill.name} className={classes.skillWrapper}>
+            <div
+              key={skill.name}
+              aria-label={skill.name}
+              className={classes.skillWrapper}
+            >
               <skill.component />
               <p>{skill.name}</p>
             </div>
