@@ -16,16 +16,16 @@ export const About: FC = () => {
       >
         <h1 className={classes.heading}># Who Am I?</h1>
         <p>
-          I'm Vivek Mittal, a self-taught Software Engineer II (Web) based in
-          South Mumbai, IN, and I'm currently a key contributor at Shaadi.com.
-          With a strong focus on frontend development, I've dedicated years to
-          mastering the craft, always staying on the cutting edge of web
-          technologies. My journey in web development has been marked by
-          continuous self-improvement and a relentless pursuit of knowledge. I'm
-          deeply passionate about creating exceptional user experiences and
-          utilizing technology to forge meaningful connections. My role at
-          Shaadi.com allows me to apply this passion daily, ensuring our users
-          have the best online matchmaking experience possible.
+          I'm Vivek Mittal, a frontend engineer based in New Delhi, IN, and I'm
+          currently a key contributor at Artisan AI. With a strong focus on
+          frontend development, I've dedicated years to mastering the craft,
+          always staying on the cutting edge of web technologies. My journey in
+          web development has been marked by continuous self-improvement and a
+          relentless pursuit of knowledge. I'm deeply passionate about creating
+          exceptional user experiences and utilizing technology to forge
+          meaningful connections. My role at Artisan AI allows me to apply this
+          passion daily, ensuring our users have the best online matchmaking
+          experience possible.
         </p>
       </motion.div>
       <br />

@@ -4,16 +4,26 @@ import { IProfessionalExperience } from "../types/experience";
 export const ProfessionalExperience: IProfessionalExperience[] = [
   {
     icon: FaCalendar,
+    company: "Artisan AI",
+    duration: "February-2024 - Present",
+    description:
+      "Working on creating advanced digital workers using cutting-edge AI technology to supercharge productivity.",
+    designation: "Senior Frontend Engineer",
+  },
+  {
+    icon: FaCalendar,
     company: "Shaadi.com",
-    duration: "October-2023 - Present",
-    description: "Working towards improving the user experience and user retention on the platform.",
+    duration: "October-2023 - February-2024",
+    description:
+      "Worked on improving the user experience and user retention on the platform.",
     designation: "Software Engineer II (Web)",
   },
   {
     icon: FaCalendar,
     company: "Shaadi.com",
     duration: "March-2022 - September-2023",
-    description: "I enhanced engagement, boosting user interaction by ~20%. Introduced Astro compatibility feature, upgraded legacy PHP to React/Next.js for better UX. Successfully executed bug-free Astro project. Timely, bug-minimal project delivery lauded by Product Manager. Achieved ~90% type safety with TypeScript, led code improvements. Revamped Daily Recommendation page, optimizing performance.",
+    description:
+      "I enhanced engagement, boosting user interaction by ~20%. Introduced Astro compatibility feature, upgraded legacy PHP to React/Next.js for better UX. Successfully executed bug-free Astro project. Timely, bug-minimal project delivery lauded by Product Manager. Achieved ~90% type safety with TypeScript, led code improvements. Revamped Daily Recommendation page, optimizing performance.",
     designation: "Software Engineer I (Web)",
   },
   {
